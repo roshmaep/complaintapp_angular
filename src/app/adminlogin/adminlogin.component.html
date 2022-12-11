@@ -1,3 +1,4 @@
+<app-navadmin></app-navadmin>
 <div class="conatiner">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
@@ -15,13 +16,10 @@
 
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-                    <button (click)="readValues()"  class="btn btn-primary">Admin Login</button>
-
+                    <button (click)="readValues()"class="btn btn-primary">Login</button>
                 </div>
-                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-                    <button (click)="readValues()"  class="btn btn-primary">User Login</button>
-
-                </div>
+                <div class="text-center"><a routerLink="/userlogin">user login</a></div>
+                <div class="text-center"><a routerLink="/userreg">user registration</a></div>
             </div>
         </div>
     </div>
