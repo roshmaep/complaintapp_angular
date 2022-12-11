@@ -7,10 +7,10 @@ import { ApiService } from '../api.service';
   styleUrls: ['./mycomplaint.component.css']
 })
 export class MycomplaintComponent {
-  userid:any=""
+  userId:any=""
   constructor(private api:ApiService){
-    this.userid=localStorage.getItem("userid")
-    let data:any={"userid":this.userid}
+    this.userId=localStorage.getItem("userInfo")
+    let data:any={"userid":this.userId}
     console.log(data);
     api.viewMyComplaint(data).subscribe(
       (response:any)=>{
