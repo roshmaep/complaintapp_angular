@@ -12,6 +12,9 @@ import { NavadminComponent } from './navadmin/navadmin.component';
 import { UserloginComponent } from './userlogin/userlogin.component';
 import { ViewprofileComponent } from './viewprofile/viewprofile.component';
 import { NavuserComponent } from './navuser/navuser.component';
+import { AddcomplaintComponent } from './addcomplaint/addcomplaint.component';
+import { MycomplaintComponent } from './mycomplaint/mycomplaint.component';
+import { ViewallcomplaintComponent } from './viewallcomplaint/viewallcomplaint.component';
 const myRoute:Routes=[{
 path:"",
 component:AdminloginComponent
@@ -30,6 +33,17 @@ component:AdminloginComponent
 {
   path:"viewprofile",
   component:ViewprofileComponent
+},
+{
+  path:"addcom",
+  component:AddcomplaintComponent
+},{
+  path:"mycomp",
+  component:MycomplaintComponent
+},
+{
+  path:"viewcomp",
+  component:ViewallcomplaintComponent
 }]
 @NgModule({
   declarations: [
@@ -39,7 +53,10 @@ component:AdminloginComponent
     NavadminComponent,
     UserloginComponent,
     ViewprofileComponent,
-    NavuserComponent
+    NavuserComponent,
+    AddcomplaintComponent,
+    MycomplaintComponent,
+    ViewallcomplaintComponent
   ],
   imports: [
     BrowserModule,
