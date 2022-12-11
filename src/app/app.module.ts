@@ -8,14 +8,38 @@ import { FormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
 import { UserrgComponent } from './userrg/userrg.component';
+import { NavadminComponent } from './navadmin/navadmin.component';
+import { UserloginComponent } from './userlogin/userlogin.component';
+import { ViewprofileComponent } from './viewprofile/viewprofile.component';
+import { NavuserComponent } from './navuser/navuser.component';
 const myRoute:Routes=[{
-
+path:"",
+component:AdminloginComponent
+},{
+  path:"userreg",
+  component:UserrgComponent
+},
+{
+  path:"navadmin",
+  component:NavadminComponent
+},
+{
+  path:"userlogin",
+  component:UserloginComponent
+},
+{
+  path:"viewprofile",
+  component:ViewprofileComponent
 }]
 @NgModule({
   declarations: [
     AppComponent,
     AdminloginComponent,
-    UserrgComponent
+    UserrgComponent,
+    NavadminComponent,
+    UserloginComponent,
+    ViewprofileComponent,
+    NavuserComponent
   ],
   imports: [
     BrowserModule,

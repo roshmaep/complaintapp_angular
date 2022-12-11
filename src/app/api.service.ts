@@ -7,4 +7,15 @@ import { Injectable } from '@angular/core';
 export class ApiService {
 
   constructor(private http:HttpClient) { }
+
+  userreg=(dataToSend:any)=>{
+    return this.http.post("http://localhost:8080/userreg",dataToSend)
+  }
+  userLogin=(dataToSend:any)=>{
+    return this.http.post("http://localhost:8080/userlogin",dataToSend)
+  }
+  getProfileDetails=(datatosend:any)=>{
+    return this.http.post("http://localhost:8080/getUserById",datatosend)
+  }
+
 }
